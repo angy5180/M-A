@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<link href="css/mycss.css" rel='stylesheet' type='text/css' />
+	 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link rel="shortcut icon" href="images/fav.png" />	
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700' rel='stylesheet' type='text/css'>
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/myJavaScript.js"></script>
+		<!--webfonts-->
+		<script type="text/javascript" src="js/easing.js"></script>
+	  	<title>Home Page</title>
+	 
+	</head>
+
+	 <body> 
+			<head>
+				<div class="header">
+					<div class="row">
+						<div class="top-header">
+							<div class="logo">
+								<a href="#"><img src="img/logo.png" title="logo" /></a>
+							</div>
+							<nav class="top-nav">
+								<ul class="top-nav">
+									<li class="active"><a href="#index" class="scroll">Home </a></li>
+									<li class="active"><a href="#home" class="scroll">Trips </a></li>
+									<li class="active"><a href="#home" class="scroll">Pricing</a></li>
+									<li class="active"><a href="#home" class="scroll">About us</a></li>
+								</ul>
+								<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+							</nav>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="main">
+							<form id="form_id" method="post" name="myform">
+								<label>User Name :</label>
+								<input type="text" name="username" id="username"/>
+								<label>Password :</label>
+								<input type="password" name="password" id="password"/>
+								<input type="button" value="Login" id="submit" onclick="validateLogin()"/>
+							</form>
+						</div>
+					</div>
+			</div><!--End of Header-->	
+			</head>
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-lg-8">
+						<!--Galeria de noticias-->
+						<div class="sreen-gallery-cursual">
+							 <div class="container">
+						       	<div id="owl-demo" class="owl-carousel">
+					                <div class="item">
+					                   	<img src="img/lotr.jpg" alt="screen-name">
+					                </div>					               
+					                <div class="item">
+					                	<img src="img/lotr.jpg" alt="screen-name">
+					                </div>					             
+					                <div class="item">
+					                	<img  src="img/twd.jpg" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img  src="img/lotr.jpg" alt="screen-name">
+					                </div>
+					                <div class="item">
+					                	<img  src="img/twd.jpg" alt="screen-name">
+					                </div>
+					                
+				              	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		<footer>
+			<div class="container">
+					<div class="footer-grids">
+						<div class="col-md-3 footer-grid about-info">
+							<a href="#"><img class="size" src="img/hp.jpg" title="Harry Potter" /></a>
+							<p><strong>Check our magic tour</strong>, you will have anything but fantastic aventures</p>
+						</div>
+						<div class="col-md-3 footer-grid about-info">
+							<a href="#"><img class="size" src="img/twd.jpg" title="Umbrella" /></a>
+							<p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+						<div class="col-md-3 footer-grid about-info">
+							<a href="#"><img class="size" src="img/arrow.jpg" title="Umbrella" /></a>
+							<p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+						<div class="col-md-3 footer-grid about-info">
+							<a href="#"><img class="size" src="img/lotr.jpg" title="Umbrella" /></a>
+							<p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+				</div>
+			<div>
+				<ul class="footer-social-icons col-md-2 text-center">
+							<li><a class="f-be" href="#"><span> </span></a></li>
+							<li><a class="f-tw" href="#"><span> </span></a></li>
+							<li><a class="f-db" href="#"><span> </span></a></li>
+							<li><a class="f-ti" href="#"><span> </span></a></li>
+							<li><a class="f-go" href="#"><span> </span></a></li>
+							<div class="clearfix"> </div>
+						</ul>
+			</div>
+	</body>
+		
+			
+	<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){		
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					});
+				});
+	
+	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+	 <!--//webfonts-->
+			<!--start-top-nav-script-->
+	</script>
+			<script>
+				$(function() {
+					var pull 		= $('#pull');
+						menu 		= $('nav ul');
+						menuHeight	= menu.height();
+					$(pull).on('click', function(e) {
+						e.preventDefault();
+						menu.slideToggle();
+					});
+					$(window).resize(function(){
+		        		var w = $(window).width();
+		        		if(w > 320 && menu.is(':hidden')) {
+		        			menu.removeAttr('style');
+		        		}
+		    		});
+				});
+			<!----//End-top-nav-script---->
+	</script>
+	<script src="js/owl.carousel.js"></script>
+	<script>
+		$(document).ready(function() {
+		$("#owl-demo").owlCarousel({
+			items : 1,
+			lazyLoad : true,
+			autoPlay : true,
+							      });
+							    });
+	</script>
+	<script src="js/owl.carousel.js">
+		var attempt = 3; // Variable to count number of attempts.
+// Below function Executes on click of login button.
+function validateLogin()
+{
+	var username = document.getElementById("username").value;
+	var password = document.getElementById("password").value;
+	if ( username == "admin" && password == "12345")
+	{
+		alert ("Login successfully");
+		/*window.location = "success.html"; // Redirecting to other page.*/
+		return false;
+	}
+	else
+	{
+		attempt --;// Decrementing by one.
+		alert("You have left "+attempt+" attempt;");
+// Disabling fields after 3 attempts.
+			if( attempt == 0)
+			{
+			document.getElementById("username").disabled = true;
+			document.getElementById("password").disabled = true;
+			document.getElementById("submit").disabled = true;
+			return false;
+			}
+	}
+}
+
+		
+	</script>
+
+</html>
